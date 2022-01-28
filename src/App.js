@@ -64,10 +64,10 @@ function App() {
       </div>
       <div className="config-pad-wrapper">
         <div className="option-button">
-          <SwitchButton>p</SwitchButton>
+          <SwitchButton checked={true}>power</SwitchButton>
         </div>
         <div className="option-button">
-          <SwitchButton>b</SwitchButton>
+          <SwitchButton>bank</SwitchButton>
         </div>
       </div>
 
