@@ -66,6 +66,9 @@ function App() {
         <div className="option-button">
           <SwitchButton>p</SwitchButton>
         </div>
+        <div className="option-button">
+          <SwitchButton>b</SwitchButton>
+        </div>
       </div>
 
       {/* <a

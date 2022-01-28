@@ -68,12 +68,14 @@ p {
   font-size: 24px;
 }
 
-/* .config-pad-wrapper {
+.config-pad-wrapper {
   display: grid;
   width: 320px;
   grid-template-columns: repeat(2, 1fr);
+  /* background-color: aqua; */
 }
 .option-button {
   display: flex;
-  padding: 0 20px;
-} */
+  justify-content: center;
+  /* background-color: cornflowerblue; */
+}
