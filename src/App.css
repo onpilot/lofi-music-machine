@@ -1,27 +1,79 @@
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 #drum-machine {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.wrapper {
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  margin: 32px auto;
+  /* background-color: aqua; */
+}
+.header h1,
+p {
+  margin: 0;
+}
+
+#display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  border: 1px solid black;
+  font-weight: bold;
+  background-color: blueviolet;
+  color: white;
+}
+#display p {
+  margin: 0;
+  font-family: 'Cascadia Code', Menlo, Consolas, monospace;
+}
+
+.main-pad-wrapper {
   display: grid;
   width: 320px;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-  background-color: khaki;
+  margin: 20px auto;
+  /* background-color: palevioletred; */
 }
 .drum-pad {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   /* background-color: black;
   color: white; */
 }
 .pad-letter {
   font-size: 24px;
 }
+
+/* .config-pad-wrapper {
+  display: grid;
+  width: 320px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.option-button {
+  display: flex;
+  padding: 0 20px;
+} */
