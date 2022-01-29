@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import DrumPad from './DrumPad';
-import SwitchButton from './SwitchButton';
+import DrumPad from './components/DrumPad';
+import SwitchButton from './components/SwitchButton';
 
 function App() {
   // const [isPlaying, setIsPlaying] = useState(false);

@@ -1,0 +1,11 @@
+.drum-pad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* background-color: black;
+    color: white; */
+}
+.pad-letter {
+  font-size: 24px;
+}

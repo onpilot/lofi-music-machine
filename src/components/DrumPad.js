@@ -1,4 +1,5 @@
-import audioDictionary from './audioDictionary.json';
+import './drum-pad.css';
+import audioDictionary from '../sounds/audioDictionary.json';
 
 const Audio = (props) => {
   const audioSrc = audioDictionary[0][props.id];
