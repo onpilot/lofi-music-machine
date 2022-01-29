@@ -7,16 +7,6 @@ function App() {
   // const [isPlaying, setIsPlaying] = useState(false);
   const [display, setDisplay] = useState('Zzz...');
   // const [display, setDisplay] = useState('Hello, there!');
-  const playSound = (pad) => {
-    const audio = document.getElementById(pad);
-    try {
-      audio.play();
-      // console.log(audio);
-      setDisplay(audio.id);
-    } catch (error) {
-      console.log('No Id found');
-    }
-  };
 
   const handleKeyDown = (event) => {
     if (
@@ -41,6 +31,21 @@ function App() {
       document.removeEventListener('keydown', handleKeyDown);
     };
   });
+
+  const playSound = (code) => {
+    const audio = document.getElementById(code);
+    let audioText = document.getElementById(code).innerText;
+    try {
+      audio.play();
+    } catch (error) {
+      console.log('No Id found');
+    }
+    try {
+      setDisplay(audioText);
+    } catch (e) {
+      console.log(e.message);
+    }
+  };
 
   return (
     <div id="drum-machine">
