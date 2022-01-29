@@ -1,8 +1,8 @@
 import './drum-pad.css';
-import audioDictionary from '../sounds/audioDictionary.json';
+import audioList from './audioList.js';
 
 const Audio = (props) => {
-  const audioSrc = audioDictionary[0][props.id];
+  const audioSrc = audioList[0][props.id];
   // console.log(audioSrc);
   return <audio id={props.id} className="clip" src={audioSrc}></audio>;
 };

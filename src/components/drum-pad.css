@@ -4,8 +4,9 @@
   justify-content: center;
   cursor: pointer;
   /* background-color: black;
-    color: white; */
+  color: white; */
 }
 .pad-letter {
+  font-family: 'Cascadia Code', Menlo, Consolas, monospace;
   font-size: 24px;
 }
