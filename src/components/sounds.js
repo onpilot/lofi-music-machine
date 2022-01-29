@@ -53,19 +53,3 @@ const audioDictionary = {
 };
 
 export default audioDictionary;
-
-// const audioList = [
-//   {
-//     Q: sounds['deleted-user-11009121__lofi-loop-1.mp3'],
-//     W: sounds['deleted-user-11009121__lofi-loop-2.mp3'],
-//     E: sounds['deleted-user-11009121__lofi-loop-3.mp3'],
-//     A: sounds['deleted-user-11009121__lofi-loop-4.mp3'],
-//     S: sounds['deleted-user-11009121__lofi-loop-5.mp3'],
-//     D: sounds['deleted-user-11009121__lofi-loop-6.mp3'],
-//     Z: sounds['deleted-user-11009121__lofi-loop-7.mp3'],
-//     X: sounds['deleted-user-11009121__lofi-loop-8.mp3'],
-//     C: sounds['deleted-user-11009121__lofi-loop-9.mp3'],
-//   },
-// ];
-
-// export default audioList;
