@@ -3,8 +3,10 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  /* background-color: black;
-  color: white; */
+  background-color: #242424;
+  color: hotpink;
+  border-radius: 8px;
+  border: none;
 }
 .pad-letter {
   font-family: 'Cascadia Code', Menlo, Consolas, monospace;

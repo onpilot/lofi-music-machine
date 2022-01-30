@@ -4,6 +4,8 @@ This project was built as part of freeCodeCamp projects. Compared to my previous
 
 ## Key Functionality
 
+- [x] Button and keyboard click handling
+- [x] Playing another audio will automatically pause previously playing audio.
 - [x] Audio loop option
 - [x] Fetching local audio files
 - [x] Reusable components
