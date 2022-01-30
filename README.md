@@ -4,9 +4,10 @@ This project was built as part of freeCodeCamp projects. Compared to my previous
 
 ## Key Functionality
 
-- [ ] Alternative sounds (thru Bank button)
+- [x] Audio loop option
 - [x] Fetching local audio files
 - [x] Reusable components
+- [ ] Power button didn't instantly stop current playing audio, it will require some rework.
 
 ## Academic Honesty Policy
 
