@@ -1,17 +1,18 @@
 import './switch-button.css';
 
 const SwitchButton = (props) => {
-  if (props.checked === true) {
+  if (props.checked) {
     return (
       <label className="switch">
-        <input type="checkbox" defaultChecked />
+        <input type="checkbox" onClick={props.onClick} defaultChecked />
         <span className="slider slider-text">{props.children}</span>
       </label>
     );
-  } else {
+  }
+  if (!props.checked) {
     return (
       <label className="switch">
-        <input type="checkbox" />
+        <input type="checkbox" onClick={props.onClick} />
         <span className="slider slider-text">{props.children}</span>
       </label>
     );
