@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/lofi-music-machine/static/css/main.54c0041f.css",
+    "main.js": "/lofi-music-machine/static/js/main.ffff5f34.js",
+    "static/js/787.1e07ccac.chunk.js": "/lofi-music-machine/static/js/787.1e07ccac.chunk.js",
+    "static/media/deleted-user-11009121__lofi-loop-1.mp3": "/lofi-music-machine/static/media/deleted-user-11009121__lofi-loop-1.ef4fd05ee4a36f6f6a86.mp3",
+    "static/media/deleted-user-11009121__lofi-loop-5.mp3": "/lofi-music-machine/static/media/deleted-user-11009121__lofi-loop-5.cd10852f7283c7069644.mp3",
+    "static/media/deleted-user-11009121__lofi-loop-8.mp3": "/lofi-music-machine/static/media/deleted-user-11009121__lofi-loop-8.ed9c858145ee72b1fd81.mp3",
+    "static/media/deleted-user-11009121__lofi-loop-9.mp3": "/lofi-music-machine/static/media/deleted-user-11009121__lofi-loop-9.035f98915231449650ef.mp3",
+    "static/media/deleted-user-11009121__lofi-loop-2.mp3": "/lofi-music-machine/static/media/deleted-user-11009121__lofi-loop-2.40225ac6fdabfe05bbab.mp3",
+    "static/media/deleted-user-11009121__lofi-loop-3.mp3": "/lofi-music-machine/static/media/deleted-user-11009121__lofi-loop-3.88747c3ccc3999b79266.mp3",
+    "static/media/deleted-user-11009121__lofi-loop-6.mp3": "/lofi-music-machine/static/media/deleted-user-11009121__lofi-loop-6.915ee6fcc425b6e22ec7.mp3",
+    "static/media/deleted-user-11009121__lofi-loop-7.mp3": "/lofi-music-machine/static/media/deleted-user-11009121__lofi-loop-7.9102b2c24c97b487f4cc.mp3",
+    "static/media/deleted-user-11009121__lofi-loop-4.mp3": "/lofi-music-machine/static/media/deleted-user-11009121__lofi-loop-4.784b32144143f2437a6a.mp3",
+    "index.html": "/lofi-music-machine/index.html",
+    "main.54c0041f.css.map": "/lofi-music-machine/static/css/main.54c0041f.css.map",
+    "main.ffff5f34.js.map": "/lofi-music-machine/static/js/main.ffff5f34.js.map",
+    "787.1e07ccac.chunk.js.map": "/lofi-music-machine/static/js/787.1e07ccac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54c0041f.css",
+    "static/js/main.ffff5f34.js"
+  ]
+}
