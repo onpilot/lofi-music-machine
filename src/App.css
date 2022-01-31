@@ -3,6 +3,9 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+body {
+  background-color: #171117;
+}
 *,
 *:before,
 *:after {
@@ -28,6 +31,7 @@ html {
 }
 .header h1,
 p {
+  color: white;
   margin: 0;
 }
 
@@ -45,6 +49,11 @@ p {
 #display p {
   margin: 0;
   font-family: 'Cascadia Code', Menlo, Consolas, monospace;
+}
+.display-off {
+  background-color: #242424 !important;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .main-pad-wrapper {
@@ -82,6 +91,7 @@ p {
   margin: 0 5px;
 }
 .icon {
+  fill: #c9c9c9;
   width: 24px;
   height: 24px;
 }

@@ -1,15 +1,14 @@
 # Lofi Music Machine
 
-This project was built as part of freeCodeCamp projects. Compared to my previous project, [markdown-previewer](https://github.com/onpilot/markdown-previewer), here in this project I try to explore more on CSS side.
+This project was built as part of freeCodeCamp projects. Compared to my previous project, [markdown-previewer](https://github.com/onpilot/markdown-previewer), here in this project I try to explore more on react hooks as well as on CSS side.
 
-## Key Functionality
+## ToDos
 
 - [x] Button and keyboard click handling
+- [x] Audio loop and Power option buttons
 - [x] Playing another audio will automatically pause previously playing audio.
-- [x] Audio loop option
 - [x] Fetching local audio files
 - [x] Reusable components
-- [ ] Power button didn't instantly stop current playing audio, it will require some rework.
 
 ## Academic Honesty Policy
 

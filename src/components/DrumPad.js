@@ -3,8 +3,6 @@ import audioDictionary from './sounds.js';
 
 const Audio = (props) => {
   const { id } = props;
-  // const audioSrc = audioList[0][id];
-  // const audioSrc = audioDictionary[id]['src'];
   const { src, name } = audioDictionary[id];
   return (
     <audio id={id} className="clip" src={src}>
@@ -14,13 +12,28 @@ const Audio = (props) => {
 };
 
 const DrumPad = (props) => {
-  const { id, onClick } = props;
+  const { id, onClick, onEnded, animated } = props;
+  if (animated === props.id) {
+    return (
+      <button
+        id={`pad-${id}`}
+        className="drum-pad pad-letter drum-pad-animated"
+        type="button"
+        onClick={onClick}
+        onEnded={onEnded}
+      >
+        {id}
+        <Audio id={id}></Audio>
+      </button>
+    );
+  }
   return (
     <button
       id={`pad-${id}`}
       className="drum-pad pad-letter"
       type="button"
       onClick={onClick}
+      onEnded={onEnded}
     >
       {id}
       <Audio id={id}></Audio>

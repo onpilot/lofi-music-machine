@@ -5,6 +5,7 @@
   width: 100px;
   height: 40px;
   border: 1px solid black;
+  border-radius: 8px;
 }
 
 /* Hide default HTML checkbox */
@@ -23,6 +24,7 @@
   right: 0;
   bottom: 0;
   background-color: #242424;
+  border-radius: 8px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }

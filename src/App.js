@@ -1,14 +1,28 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import Display from './components/Display';
 import DrumPad from './components/DrumPad';
 import SwitchButton from './components/SwitchButton';
 import Footer from './Footer';
 
+const acceptedEventCode = [
+  'KeyQ',
+  'KeyW',
+  'KeyE',
+  'KeyA',
+  'KeyS',
+  'KeyD',
+  'KeyZ',
+  'KeyX',
+  'KeyC',
+];
+
 function App() {
   const [power, setPower] = useState(true);
   const [loop, setLoop] = useState(false);
-  const [isPlaying, setIsPlaying] = useState('');
-  const [display, setDisplay] = useState('Zzz...');
+  const [isPlaying, setIsPlaying] = useState(null);
+  const initialDisplay = 'Zzz...';
+  const [display, setDisplay] = useState(initialDisplay);
 
   const switchPower = () => {
     setPower(!power);
@@ -18,20 +32,12 @@ function App() {
   };
 
   const handleKeyDown = (event) => {
-    if (
-      (event.code === 'KeyQ') |
-      (event.code === 'KeyW') |
-      (event.code === 'KeyE') |
-      (event.code === 'KeyA') |
-      (event.code === 'KeyS') |
-      (event.code === 'KeyD') |
-      (event.code === 'KeyZ') |
-      (event.code === 'KeyX') |
-      (event.code === 'KeyC')
-    ) {
-      const keypress = event.key.toUpperCase();
-      playSound(keypress);
-    }
+    acceptedEventCode.forEach((i) => {
+      if (event.code === i) {
+        const keypress = event.key.toUpperCase();
+        playSound(keypress);
+      }
+    });
   };
 
   useEffect(() => {
@@ -41,47 +47,46 @@ function App() {
     };
   });
 
+  const playedAudio = document.getElementById(isPlaying);
   useEffect(() => {
-    if (!loop && isPlaying !== '') {
-      let playedAudio = document.getElementById(isPlaying);
-      try {
-        playedAudio.loop = false;
-      } catch (e) {
-        console.log(e.message);
-      }
+    if (!power && playedAudio) {
+      playedAudio.pause();
+      setIsPlaying(null);
+      setDisplay(initialDisplay);
+    }
+  }, [power, playedAudio]);
+
+  useEffect(() => {
+    if (!loop && isPlaying !== null) {
+      playedAudio.loop = false;
+    }
+    if (loop && isPlaying !== null) {
+      playedAudio.loop = true;
     }
   });
 
   const playSound = (code) => {
-    if (power === true) {
+    if (power) {
       let audio = document.getElementById(code);
       let audioText = document.getElementById(code).innerText;
 
-      if (loop === true) {
-        audio.loop = true;
+      if (isPlaying !== null) {
+        playedAudio.pause();
       }
 
-      if (isPlaying !== '') {
-        let playedAudio = document.getElementById(isPlaying);
-        try {
-          playedAudio.pause();
-        } catch (e) {
-          console.log(e.message);
-        }
+      if (audio.paused) {
+        audio.currentTime = 0;
       }
 
-      try {
-        if (audio.paused) {
-          audio.currentTime = 0;
-        }
-        audio.play();
-      } catch (e) {
-        console.log(e.message);
-      } finally {
-        setIsPlaying(code);
-        setDisplay(audioText);
-      }
+      audio.play();
+      setIsPlaying(code);
+      setDisplay(audioText);
     }
+  };
+
+  const resetState = () => {
+    setIsPlaying(null);
+    setDisplay(initialDisplay);
   };
 
   return (
@@ -90,19 +95,62 @@ function App() {
         <h1>🎶 Lofi Music Machine</h1>
         <p>Playing lofi beats to your ears.</p>
       </div>
-      <div id="display">
-        <p>{display}</p>
-      </div>
+      <Display id="display" display={display} power={power}></Display>
       <div className="main-pad-wrapper">
-        <DrumPad id="Q" onClick={() => playSound('Q')}></DrumPad>
-        <DrumPad id="W" onClick={() => playSound('W')}></DrumPad>
-        <DrumPad id="E" onClick={() => playSound('E')}></DrumPad>
-        <DrumPad id="A" onClick={() => playSound('A')}></DrumPad>
-        <DrumPad id="S" onClick={() => playSound('S')}></DrumPad>
-        <DrumPad id="D" onClick={() => playSound('D')}></DrumPad>
-        <DrumPad id="Z" onClick={() => playSound('Z')}></DrumPad>
-        <DrumPad id="X" onClick={() => playSound('X')}></DrumPad>
-        <DrumPad id="C" onClick={() => playSound('C')}></DrumPad>
+        <DrumPad
+          id="Q"
+          onClick={() => playSound('Q')}
+          onEnded={() => resetState()}
+          animated={isPlaying}
+        ></DrumPad>
+        <DrumPad
+          id="W"
+          onClick={() => playSound('W')}
+          onEnded={() => resetState()}
+          animated={isPlaying}
+        ></DrumPad>
+        <DrumPad
+          id="E"
+          onClick={() => playSound('E')}
+          onEnded={() => resetState()}
+          animated={isPlaying}
+        ></DrumPad>
+        <DrumPad
+          id="A"
+          onClick={() => playSound('A')}
+          onEnded={() => resetState()}
+          animated={isPlaying}
+        ></DrumPad>
+        <DrumPad
+          id="S"
+          onClick={() => playSound('S')}
+          onEnded={() => resetState()}
+          animated={isPlaying}
+        ></DrumPad>
+        <DrumPad
+          id="D"
+          onClick={() => playSound('D')}
+          onEnded={() => resetState()}
+          animated={isPlaying}
+        ></DrumPad>
+        <DrumPad
+          id="Z"
+          onClick={() => playSound('Z')}
+          onEnded={() => resetState()}
+          animated={isPlaying}
+        ></DrumPad>
+        <DrumPad
+          id="X"
+          onClick={() => playSound('X')}
+          onEnded={() => resetState()}
+          animated={isPlaying}
+        ></DrumPad>
+        <DrumPad
+          id="C"
+          onClick={() => playSound('C')}
+          onEnded={() => resetState()}
+          animated={isPlaying}
+        ></DrumPad>
       </div>
       <div className="config-pad-wrapper">
         <div className="option-button">
