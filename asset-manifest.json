@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lofi-music-machine/static/css/main.a107193b.css",
+    "main.css": "/lofi-music-machine/static/css/main.79283b32.css",
     "main.js": "/lofi-music-machine/static/js/main.ee45f2a8.js",
     "static/js/787.1e07ccac.chunk.js": "/lofi-music-machine/static/js/787.1e07ccac.chunk.js",
     "static/media/deleted-user-11009121__lofi-loop-1.mp3": "/lofi-music-machine/static/media/deleted-user-11009121__lofi-loop-1.ef4fd05ee4a36f6f6a86.mp3",
@@ -13,12 +13,12 @@
     "static/media/deleted-user-11009121__lofi-loop-7.mp3": "/lofi-music-machine/static/media/deleted-user-11009121__lofi-loop-7.9102b2c24c97b487f4cc.mp3",
     "static/media/deleted-user-11009121__lofi-loop-4.mp3": "/lofi-music-machine/static/media/deleted-user-11009121__lofi-loop-4.784b32144143f2437a6a.mp3",
     "index.html": "/lofi-music-machine/index.html",
-    "main.a107193b.css.map": "/lofi-music-machine/static/css/main.a107193b.css.map",
+    "main.79283b32.css.map": "/lofi-music-machine/static/css/main.79283b32.css.map",
     "main.ee45f2a8.js.map": "/lofi-music-machine/static/js/main.ee45f2a8.js.map",
     "787.1e07ccac.chunk.js.map": "/lofi-music-machine/static/js/787.1e07ccac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a107193b.css",
+    "static/css/main.79283b32.css",
     "static/js/main.ee45f2a8.js"
   ]
 }
