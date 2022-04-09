@@ -1,27 +1,27 @@
-import { useState, useEffect } from 'react';
-import './App.css';
-import Display from './components/Display';
-import DrumPad from './components/DrumPad';
-import SwitchButton from './components/SwitchButton';
-import Footer from './Footer';
+import { useState, useEffect } from "react";
+import Display from "./components/Display";
+import DrumPad from "./components/DrumPad";
+import SwitchButton from "./components/SwitchButton";
+import { SocialLinks } from "./components/social-links/SocialLinks";
+import "./App.css";
 
 const acceptedEventCode = [
-  'KeyQ',
-  'KeyW',
-  'KeyE',
-  'KeyA',
-  'KeyS',
-  'KeyD',
-  'KeyZ',
-  'KeyX',
-  'KeyC',
+  "KeyQ",
+  "KeyW",
+  "KeyE",
+  "KeyA",
+  "KeyS",
+  "KeyD",
+  "KeyZ",
+  "KeyX",
+  "KeyC",
 ];
 
 function App() {
   const [power, setPower] = useState(true);
   const [loop, setLoop] = useState(false);
   const [isPlaying, setIsPlaying] = useState(null);
-  const initialDisplay = 'Zzz...';
+  const initialDisplay = "Zzz...";
   const [display, setDisplay] = useState(initialDisplay);
 
   const switchPower = () => {
@@ -41,9 +41,9 @@ function App() {
   };
 
   useEffect(() => {
-    document.addEventListener('keydown', handleKeyDown);
+    document.addEventListener("keydown", handleKeyDown);
     return () => {
-      document.removeEventListener('keydown', handleKeyDown);
+      document.removeEventListener("keydown", handleKeyDown);
     };
   });
 
@@ -99,55 +99,55 @@ function App() {
       <div className="main-pad-wrapper">
         <DrumPad
           id="Q"
-          onClick={() => playSound('Q')}
+          onClick={() => playSound("Q")}
           onEnded={() => resetState()}
           animated={isPlaying}
         ></DrumPad>
         <DrumPad
           id="W"
-          onClick={() => playSound('W')}
+          onClick={() => playSound("W")}
           onEnded={() => resetState()}
           animated={isPlaying}
         ></DrumPad>
         <DrumPad
           id="E"
-          onClick={() => playSound('E')}
+          onClick={() => playSound("E")}
           onEnded={() => resetState()}
           animated={isPlaying}
         ></DrumPad>
         <DrumPad
           id="A"
-          onClick={() => playSound('A')}
+          onClick={() => playSound("A")}
           onEnded={() => resetState()}
           animated={isPlaying}
         ></DrumPad>
         <DrumPad
           id="S"
-          onClick={() => playSound('S')}
+          onClick={() => playSound("S")}
           onEnded={() => resetState()}
           animated={isPlaying}
         ></DrumPad>
         <DrumPad
           id="D"
-          onClick={() => playSound('D')}
+          onClick={() => playSound("D")}
           onEnded={() => resetState()}
           animated={isPlaying}
         ></DrumPad>
         <DrumPad
           id="Z"
-          onClick={() => playSound('Z')}
+          onClick={() => playSound("Z")}
           onEnded={() => resetState()}
           animated={isPlaying}
         ></DrumPad>
         <DrumPad
           id="X"
-          onClick={() => playSound('X')}
+          onClick={() => playSound("X")}
           onEnded={() => resetState()}
           animated={isPlaying}
         ></DrumPad>
         <DrumPad
           id="C"
-          onClick={() => playSound('C')}
+          onClick={() => playSound("C")}
           onEnded={() => resetState()}
           animated={isPlaying}
         ></DrumPad>
@@ -162,7 +162,7 @@ function App() {
           <SwitchButton onClick={() => switchLoop()}>loop</SwitchButton>
         </div>
       </div>
-      <Footer></Footer>
+      <SocialLinks></SocialLinks>
     </div>
   );
 }
