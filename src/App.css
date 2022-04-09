@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code@4.2.1/index.min.css");
+
 html {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -48,7 +50,7 @@ p {
 }
 #display p {
   margin: 0;
-  font-family: 'Cascadia Code', Menlo, Consolas, monospace;
+  font-family: "Cascadia Code", Menlo, Consolas, monospace;
 }
 .display-off {
   background-color: #242424 !important;
