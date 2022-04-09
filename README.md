@@ -2,12 +2,17 @@
 
 This project was built as part of freeCodeCamp projects. Compared to my previous project, [markdown-previewer](https://github.com/onpilot/markdown-previewer), here in this project I try to explore more on react hooks as well as on CSS side.
 
+## Preview
+
+<img src="https://github.com/onpilot/lofi-music-machine/blob/master/screenshot_lofi_music_machine.png?raw=true" alt="Lofi Music Machine preview" style="width:400px;"/>
+
 ## ToDos
 
 - [x] Button and keyboard click handling
 - [x] Audio loop and Power option buttons
 - [x] Playing another audio will automatically pause previously playing audio.
-- [x] Fetching local audio files
+- ~~[x] Fetching local audio files~~
+- [x] Utilize jsdelivr cdn to serve audio files
 - [x] Reusable components
 
 ## Academic Honesty Policy
