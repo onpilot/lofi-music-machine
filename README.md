@@ -11,8 +11,7 @@ This project was built as part of freeCodeCamp projects. Compared to my previous
 - [x] Button and keyboard click handling
 - [x] Audio loop and Power option buttons
 - [x] Playing another audio will automatically pause previously playing audio.
-- ~~[x] Fetching local audio files~~
-- [x] Utilize jsdelivr cdn to serve audio files
+- [x] ~~Fetching local audio files.~~ Utilize jsdelivr cdn to serve audio files.
 - [x] Reusable components
 
 ## Academic Honesty Policy
